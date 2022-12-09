@@ -1,3 +1,5 @@
 FileName, CommitSha
-Workbooks/workbook_adxvsLA-demo_test.json,e3f887c6d19bc9abd5820e8ac9f7e21e941666d3
+Workbooks/workbook_ADXvsLA.json,96f75b0ca934e476816963ab48b270452427bd9d
 sentinel-deployment.config,1a88317b1b9f5d7c5b89dedcc07cb7502ca72b32
+Parameters/workbook-ADXvsLA-sentinel-eco-test-nazang-parameters.json,9f67141294a4a0a534f77e6eb35952ed445e014a
+Workbooks/workbook_adxvsLA-demo_test.json,e3f887c6d19bc9abd5820e8ac9f7e21e941666d3
