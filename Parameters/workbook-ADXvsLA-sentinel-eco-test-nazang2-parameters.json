@@ -10,12 +10,6 @@
         },
         "workspaceName": {
             "value": "sentinel-eco-test-nazang2"
-        },
-        "workbookDisplayName": {
-            "value": "[concat('ADXvsLA-', parameters('workspaceName'))]"
-        },
-        "workbookSourceId": {
-            "Value": "[concat('/subscriptions/', parameters('subscriptionId'), '/resourcegroups/', parameters('resourcegroupName'), '/providers/microsoft.operationalinsights/workspaces/', parameters('workspaceName'))]"
         }
     }
 }

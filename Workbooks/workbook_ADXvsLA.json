@@ -1,9 +1,27 @@
 {
   "contentVersion": "1.0.0.0",
   "parameters": {
+   "subscriptionId": {
+      "type": "string",
+      "metadata": {
+        "description": "The subscription Id."
+        }
+     },
+     "resourcegroupName": {
+      "type": "string",
+      "metadata": {
+        "description": "The resourcegroupName."
+      }
+    },
+    "workspaceName": {
+      "type": "string",
+      "metadata": {
+        "description": "The workspaceName."
+      }
+    },
     "workbookDisplayName": {
       "type": "string",
-      "defaultValue": "ADXvsLA - sentinel-eco-test-nazang",
+      "defaultValue": "[concat('ADXvsLA-', parameters('workspaceName'))]",
       "metadata": {
         "description": "The friendly name for the workbook that is used in the Gallery or Saved List.  This name must be unique within a resource group."
       }
@@ -17,7 +35,7 @@
     },
     "workbookSourceId": {
       "type": "string",
-      "defaultValue": "/subscriptions/419581d6-4853-49bd-83b6-d94bb8a77887/resourcegroups/sentinel-eco-test-nazang/providers/microsoft.operationalinsights/workspaces/sentinel-eco-test-nazang",
+      "defaultValue": "[concat('/subscriptions/', parameters('subscriptionId'), '/resourcegroups/', parameters('resourcegroupName'), '/providers/microsoft.operationalinsights/workspaces/', parameters('workspaceName'))]",
       "metadata": {
         "description": "The id of resource instance to which the workbook will be associated"
       }
