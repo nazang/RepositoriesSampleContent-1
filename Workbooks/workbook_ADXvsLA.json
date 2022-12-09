@@ -2,22 +2,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
    "subscriptionId": {
-      "type": "string",
-      "metadata": {
-        "description": "The subscription Id."
-        }
+      "type": "string"
      },
      "resourcegroupName": {
-      "type": "string",
-      "metadata": {
-        "description": "The resourcegroupName."
-      }
+      "type": "string"
     },
     "workspaceName": {
-      "type": "string",
-      "metadata": {
-        "description": "The workspaceName."
-      }
+      "type": "string"
     },
     "workbookDisplayName": {
       "type": "string",
