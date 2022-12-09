@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "419581d6-4853-49bd-83b6-d94bb8a77887"
+        },
+        "resourcegroupName": {
+            "value": "sentinel-eco-test-nazang"
+        },
+        "workspaceName": {
+            "value": "sentinel-eco-test-nazang"
+        },
+        "workbookDisplayName": {
+            "value": "[concat('ADXvsLA-', parameters('workspaceName'))]"
+        },
+        "workbookSourceId": {
+            "Value": "[concat('/subscriptions/', parameters('subscriptionId'), '/resourcegroups/', parameters('resourcegroupName'), '/providers/microsoft.operationalinsights/workspaces/', parameters('workspaceName'))]"
+        }
+    }
+}
