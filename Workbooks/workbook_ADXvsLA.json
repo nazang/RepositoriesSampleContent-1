@@ -1,9 +1,21 @@
 {
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "subscriptionId": {
+      "type": "string", 
+      "defaultValue": "<PlaceHolder>"
+    },
+    "resourceGroupName": {
+      "type": "string", 
+      "defaultValue": "<PlaceHolder>"
+    },
+    "workspaceName": {
+      "type": "string", 
+      "defaultValue": "<PlaceHolder>"
+    },
     "workbookDisplayName": {
-      "type": "string",
-      "defaultValue": "ADXvsLA - sentinel-eco-test-nazang",
+      "type": "string", 
+      "defaultValue": "[concat('ADXvsLA  -  ', parameters('workspaceName'))]",
       "metadata": {
         "description": "The friendly name for the workbook that is used in the Gallery or Saved List.  This name must be unique within a resource group."
       }
@@ -12,21 +24,21 @@
       "type": "string",
       "defaultValue": "sentinel",
       "metadata": {
-        "description": "The gallery that the workbook will been shown under. Supported values include workbook, tsg, etc. Usually, this is 'workbook'"
+        "description": "The gallery that the workbook will been shown under. Supported values include workbook, tsg, etc. Usually, this is 'workbook'."
       }
     },
     "workbookSourceId": {
       "type": "string",
-      "defaultValue": "/subscriptions/419581d6-4853-49bd-83b6-d94bb8a77887/resourcegroups/sentinel-eco-test-nazang/providers/microsoft.operationalinsights/workspaces/sentinel-eco-test-nazang",
+      "defaultValue": "[concat('/subscriptions/', parameters('subscriptionId'), '/resourcegroups/', parameters('resourcegroupName'), '/providers/microsoft.operationalinsights/workspaces/', parameters('workspaceName'))]",
       "metadata": {
-        "description": "The id of resource instance to which the workbook will be associated"
+        "description": "The id of resource instance to which the workbook will be associate."
       }
     },
     "workbookId": {
       "type": "string",
       "defaultValue": "[newGuid()]",
       "metadata": {
-        "description": "The unique guid for this workbook instance"
+        "description": "The unique guid for this workbook instance."
       }
     }
   },
