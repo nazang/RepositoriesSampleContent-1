@@ -1,26 +1,44 @@
 {
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "workbookDisplayName": {
+    "subscriptionId": {
       "type": "string", 
       "defaultValue": "<PlaceHolder>"
+    },
+    "resourceGroupName": {
+      "type": "string", 
+      "defaultValue": "<PlaceHolder>"
+    },
+    "workspaceName": {
+      "type": "string", 
+      "defaultValue": "<PlaceHolder>"
+    },
+    "workbookDisplayName": {
+      "type": "string", 
+      "defaultValue": "[concat('ADXvsLA  -  ', parameters('workspaceName'))]",
+      "metadata": {
+        "description": "The friendly name for the workbook that is used in the Gallery or Saved List.  This name must be unique within a resource group."
+      }
     },
     "workbookType": {
       "type": "string",
       "defaultValue": "sentinel",
       "metadata": {
-        "description": "The gallery that the workbook will been shown under. Supported values include workbook, tsg, etc. Usually, this is 'workbook'"
+        "description": "The gallery that the workbook will been shown under. Supported values include workbook, tsg, etc. Usually, this is 'workbook'."
       }
     },
     "workbookSourceId": {
       "type": "string",
-      "defaultValue": "<PlaceHolder>"
+      "defaultValue": "[concat('/subscriptions/', parameters('subscriptionId'), '/resourcegroups/', parameters('resourcegroupName'), '/providers/microsoft.operationalinsights/workspaces/', parameters('workspaceName'))]",
+      "metadata": {
+        "description": "The id of resource instance to which the workbook will be associate."
+      }
     },
     "workbookId": {
       "type": "string",
       "defaultValue": "[newGuid()]",
       "metadata": {
-        "description": "The unique guid for this workbook instance"
+        "description": "The unique guid for this workbook instance."
       }
     }
   },
