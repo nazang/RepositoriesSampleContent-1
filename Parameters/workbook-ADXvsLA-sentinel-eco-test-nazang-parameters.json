@@ -10,6 +10,12 @@
         },
         "workspaceName": {
             "value": "sentinel-eco-test-nazang"
+        },
+        "workbookDisplayName": {
+            "value": "ADXvsLA-sentinel-eco-test-nazang"
+        },
+       "workbookSourceId": {
+           "value": "/subscriptions/419581d6-4853-49bd-83b6-d94bb8a77887/resourcegroups/sentinel-eco-test-nazang/providers/microsoft.operationalinsights/workspaces/sentinel-eco-test-nazang"
         }
     }
 }
