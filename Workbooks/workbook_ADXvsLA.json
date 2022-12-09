@@ -2,7 +2,8 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "workbookDisplayName": {
-      "type": "string"
+      "type": "string", 
+      "defaultValue": "<PlaceHolder>"
     },
     "workbookType": {
       "type": "string",
@@ -12,7 +13,8 @@
       }
     },
     "workbookSourceId": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "<PlaceHolder>"
     },
     "workbookId": {
       "type": "string",
