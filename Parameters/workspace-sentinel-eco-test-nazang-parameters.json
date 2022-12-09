@@ -10,6 +10,12 @@
     },
     "workspaceName": {
       "value": "sentinel-eco-test-nazang"
+    },
+    "ADXvsLA-WorkbookId": {
+      "value": "8dd3bb4d-62fd-4b40-939c-64edf3d2fdff"
+    },
+    "AMAMigrationTracker-WorkbookId": {
+      "value": "56dbbdde-991b-4fe1-ad01-5c72f84d9200"
     }
   }
 }
