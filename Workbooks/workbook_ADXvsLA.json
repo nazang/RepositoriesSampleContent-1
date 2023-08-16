@@ -34,7 +34,7 @@
         "description": "The id of resource instance to which the workbook will be associate."
       }
     },
-    "workbookId": {
+    "ADXvsLA-WorkbookId": {
       "type": "string",
       "defaultValue": "[newGuid()]",
       "metadata": {
